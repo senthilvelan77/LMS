@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Portal - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="detail-bg">
+
+    <!-- Header -->
+    <header class="header">
+        <img src="kle.jpg" class="logo">
+        <div class="header-text">
+            <h1>Student Portal Dashboard</h1>
+            <p>BCA Program</p>
+        </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <main class="dashboard-container">
+
+        <!-- Student Information -->
+        <section class="dashboard-card">
+            <h2>👨‍🎓 Student Information</h2>
+
+            <table class="info-table">
+                <tr>
+                    <td>Student Name</td>
+                    <td><input type="text" placeholder="Enter Student Name"></td>
+                </tr>
+                <tr>
+                    <td>Student ID</td>
+                    <td><input type="text" placeholder="Enter Student ID"></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" placeholder="Enter Mobile Number"></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea placeholder="Enter Address"></textarea></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Attendance Details -->
+        <section class="dashboard-card">
+            <h2>📊 Attendance Details</h2>
+
+            <table class="info-table">
+                <tr>
+                    <td>Total Working Days</td>
+                    <td><input type="number" placeholder="Total Days"></td>
+                </tr>
+                <tr>
+                    <td>Days Present</td>
+                    <td><input type="number" placeholder="Present Days"></td>
+                </tr>
+                <tr>
+                    <td>Attendance %</td>
+                    <td><input type="text" placeholder="Auto / Manual"></td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- College Program Details -->
+        <section class="dashboard-card">
+            <h2>🏫 College & Program Details</h2>
+
+            <table class="info-table">
+                <tr>
+                    <td>College Name</td>
+                    <td><input type="text" value="KLE College" readonly></td>
+                </tr>
+                <tr>
+                    <td>Program Name</td>
+                    <td><input type="text" value="BCA" readonly></td>
+                </tr>
+                <tr>
+                    <td>Current Subject</td>
+                    <td>
+                        <select>
+                        <option>HTML</option>
+                        <option>Java</option>
+                        <option>Python</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Semester</td>
+                    <td>
+                        <select>
+                        <option>1st Semester</option>
+                        <option>2nd Semester</option>
+                        <option>3rd Semester</option>
+                        <option>4th Semester</option>
+                    </select>
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="action-area">
+            <a href="index.html" class="back-btn">⬅ Back to Courses</a>
+            <a href="#" class="save-btn">Save Details</a>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
