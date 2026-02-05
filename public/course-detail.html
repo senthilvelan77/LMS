@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="detail-container">
+        <h1 id="courseTitle"></h1>
+        <p id="courseDescription"></p>
+
+        <a href="index.html" class="back-btn">⬅ Back to Home</a>
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const course = params.get("course");
+
+        const data = {
+            BCA: {
+                title: "BCA - Bachelor of Computer Applications",
+                desc: "BCA is a 3-year undergraduate program focused on computer applications, programming languages like C, Java, Python, databases, networking, and web development."
+            },
+            BBA: {
+                title: "BBA - Bachelor of Business Administration",
+                desc: "BBA is a 3-year undergraduate program focusing on management, marketing, finance, HR, and leadership skills with practical exposure."
+            },
+            MCA: {
+                title: "MCA - Master of Computer Applications",
+                desc: "MCA is a 2-year postgraduate program covering advanced programming, AI, data science, cybersecurity, and software engineering."
+            },
+            BCOM: {
+                title: "BCOM - Bachelor of Commerce",
+                desc: "BCOM is a 3-year undergraduate degree covering accounting, finance, taxation, economics, and business law."
+            }
+        };
+
+        document.getElementById("courseTitle").innerText = data[course].title;
+        document.getElementById("courseDescription").innerText = data[course].desc;
+    </script>
+
+</body>
+
+</html>
